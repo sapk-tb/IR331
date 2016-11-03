@@ -1,13 +1,13 @@
 package services;
 
-import javax.ejb.Local;
+import javax.ejb.Remote;
 
 /**
  *
  * @author sapk
  */
-@Local
-public interface EmployeBeanLocal {
+@Remote
+public interface IEmployeBean {
 
     void create(String name);
     

@@ -9,8 +9,8 @@ import javax.persistence.OneToOne;
 @Entity
 public class Service implements Serializable {
 
-    @OneToOne(targetEntity = Employé.class)
-    private Employé responsable;
+    @OneToOne(targetEntity = Employe.class)
+    private Employe responsable;
 
     @Id
     private Long id;
@@ -25,11 +25,11 @@ public class Service implements Serializable {
 
     }
 
-    public Employé getResponsable() {
+    public Employe getResponsable() {
         return this.responsable;
     }
 
-    public void setResponsable(Employé responsable) {
+    public void setResponsable(Employe responsable) {
         this.responsable = responsable;
     }
 

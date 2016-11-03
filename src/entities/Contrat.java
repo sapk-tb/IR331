@@ -12,8 +12,8 @@ public class Contrat implements Serializable {
     @Basic
     private String date;
 
-    @OneToOne(targetEntity = Employé.class)
-    private Employé employé;
+    @OneToOne(targetEntity = Employe.class)
+    private Employe employé;
 
     @Id
     private Long id;
@@ -36,11 +36,11 @@ public class Contrat implements Serializable {
         this.date = date;
     }
 
-    public Employé getEmployé() {
+    public Employe getEmployé() {
         return this.employé;
     }
 
-    public void setEmployé(Employé employé) {
+    public void setEmployé(Employe employé) {
         this.employé = employé;
     }
 

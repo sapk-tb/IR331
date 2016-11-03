@@ -5,6 +5,7 @@
  */
 package services;
 
+import javax.ejb.LocalBean;
 import javax.ejb.SessionContext;
 import javax.ejb.Stateless;
 
@@ -13,19 +14,24 @@ import javax.ejb.Stateless;
  * @author sapk
  */
 @Stateless
-public class ServiceBean implements ServiceBeanLocal {
+@LocalBean
+public class ServiceBean implements IServiceBean {
 
     SessionContext ctx;
 
     @Override
     public void create() {
+        //TODO
     }
-
+/*
+    @Override
+    public String list() {
+        //TODO
+        return "TODO";
+    }
+*/
     @Override
     public void attachEmployé() {
     }
 
-    public void setSessionContext(SessionContext ctx) {
-        this.ctx = ctx;
-    }
 }

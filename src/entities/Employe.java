@@ -8,7 +8,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Employé implements Serializable {
+public class Employe implements Serializable {
 
     @OneToOne(targetEntity = Contrat.class, mappedBy = "employé")
     private Contrat contrat;
@@ -31,7 +31,7 @@ public class Employé implements Serializable {
     @Basic
     private String nom;
 
-    public Employé() {
+    public Employe() {
 
     }
 
